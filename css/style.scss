@@ -233,6 +233,11 @@ h3 {
     background-color: $main-color;
 }
 
+.footer-bottom{
+    max-width: 1250px;
+    margin: auto;
+}
+
 @media only screen and (min-width: 768px) {
 
     .landing-section{
