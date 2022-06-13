@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Varela+Round&display=swap");
+body {
+  background-color: #404eed;
+  font-family: "Varela Round", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(24px, 5vw, 44px);
+}
+
+h3 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 900;
+}
+
+.text-purple {
+  color: #404eed;
+}
+
+.discord-btn {
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 15px;
+  outline: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 12px;
+  background-color: white;
+  text-align: center;
+  color: #212529;
+  text-decoration: none;
+  display: block;
+}
+
+.discord-btn:hover {
+  -webkit-box-shadow: 0px 5px 16px 1px #13131357;
+          box-shadow: 0px 5px 16px 1px #13131357;
+}
+
+.btn-light {
+  background-color: white;
+}
+
+.btn-light:hover {
+  color: #404eed;
+}
+
+.btn-dark {
+  background-color: #232323;
+  color: white;
+}
+
+.btn-purple {
+  background-color: #404eed;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #6470f7;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: #333333;
+}
+
+.btn-big {
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 15px 25px;
+}
+
+.bg-grey {
+  background-color: whitesmoke;
+}
+
+.desktop-header {
+  display: none;
+}
+
+.nav-menu-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #13131357;
+  visibility: hidden;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 330px;
+  border-top-left-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  padding-right: 50px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  z-index: 1000;
+}
+
+.open-nav .nav-menu-backdrop {
+  visibility: visible;
+}
+
+.open-nav .nav-menu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.nav-link {
+  font-family: "Varela Round", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #2e2e2e;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.nav-link.active {
+  background-color: whitesmoke;
+  color: #0087ff;
+}
+
+.nav-link span {
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover span {
+  border-color: #2e2e2e;
+}
+
+.nav-link.active:hover span {
+  border-color: #0087ff;
+}
+
+.nav-line-spacer {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 20px 0;
+}
+
+.nav-menu .discord-btn {
+  position: absolute;
+  bottom: 15px;
+  margin: 0;
+  margin-top: 0px;
+  width: 100%;
+  display: block;
+  max-width: 300px;
+}
+
+.landing-text-box p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.btn-group .discord-btn {
+  margin: 20px 40px 0 0;
+}
+
+.header-backdrop,
+.foreground-right {
+  display: none;
+}
+
+.foreground-left {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin-left: -80px;
+}
+
+.row-spacer {
+  padding: 2em 0;
+}
+
+.info-img, .sparkles {
+  width: 100%;
+}
+
+.nav-col .nav-link {
+  color: white;
+}
+
+.flag-img {
+  width: 24px;
+}
+
+.flag-picker {
+  font-size: 14px;
+  width: 150px;
+}
+
+.nav-col {
+  width: 150px;
+}
+
+.nav-col .nav-link {
+  padding-left: 0;
+}
+
+.footer-line-spacer {
+  display: block;
+  margin: 20px 0;
+  height: 2px;
+  background-color: #404eed;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-section {
+    min-height: 600px;
+    position: relative;
+    z-index: 10;
+  }
+  .landing-image-container {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+  }
+  .landing-text-box {
+    width: 450px;
+  }
+  .landing-text-box h1 {
+    font-size: 56px;
+  }
+  .header-backdrop, .foreground-right {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  .header-backdrop {
+    margin-left: -1000px;
+    z-index: -1;
+  }
+  .foreground-right {
+    left: 50%;
+    margin-left: -80px;
+  }
+  .foreground-left {
+    display: none;
+  }
+  .purple-download {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .mobile-header {
+    display: none;
+  }
+  .desktop-nav {
+    max-width: 1260px;
+    margin: auto;
+  }
+  .desktop-nav .nav-menu-list {
+    width: 550px;
+  }
+  .nav-link {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .nav-link:hover span {
+    border-color: white;
+  }
+  .landing-text-box {
+    margin-top: 70px;
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .desktop-header,
+  .foreground-left {
+    display: block;
+  }
+  .header-backdrop {
+    margin-left: -1260px;
+    left: 50%;
+  }
+  .foreground-right {
+    left: 50%;
+    margin-left: 350px;
+  }
+  .foreground-left {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -1000px;
+    z-index: 100;
+    max-width: none;
+    width: auto;
+    height: auto;
+  }
+  .landing-text-box h1 {
+    font-size: 60px;
+  }
+  .desc-title {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .landing-text-box p, .desc-text {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .last-info .desc-text {
+    max-width: 800px;
+    margin: auto;
+  }
+  .last-info
+.info-img {
+    max-width: 1000px;
+  }
+  .btn-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row-spacer {
+    padding: 4em 0;
+  }
+  .sparkles {
+    width: auto;
+  }
+}
+
+/**
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Varela+Round&display=swap');
+
+$main-theme: #404eed;
+
+$title-font: 'Paytone One', sans-serif;
+$main-font: 'Varela Round', sans-serif;
+
+
+body {
+    background-color: $main-theme;
+    font-family: $main-font;
+}
+
+h1 {
+    font-family: $title-font;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: $main-font;
+    font-weight: 900;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.bg-grey{
+    background-color: rgb(246, 246, 246);
+}
+
+.discord-btn{
+    border: 0;
+    border-radius: 20px;
+    min-width: 120px;
+    padding: 10px;
+    outline: none;
+    transition: 0.4s ease-in;
+    font-size: 12px;
+    background-color: white;
+    text-align: center;
+    color:#212529;
+    text-decoration: none;
+    display: block;
+}
+
+.discord-btn:hover {
+    box-shadow: 5px 5px 16px 1px #13131357;
+    color: $main-theme;
+}
+
+.btn-big {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.btn-light {
+    background-color: white;
+}
+
+.btn-dark {
+    background-color: rgb(29, 29, 29);
+}
+
+.btn-dark{
+    color: white;
+}
+
+.btn-purple {
+    background-color: $main-theme;
+    color: white;
+    width: 100%;
+}
+
+.btn-purple:hover, .btn-dark:hover{
+    color: white;
+}
+
+
+.mobile-header{
+
+    .navbar-discord-open{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .navbar-toggle{
+        cursor: pointer;
+    }
+
+    .nav-backdrop{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #13131357;
+        visibility: hidden;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 330px;
+        border-top-left-radius: 10px;
+        background-color: white;
+        padding: 20px;
+        padding-right: 50px;
+        transform: translateX(100%);
+        transition: 0.2s ease;
+
+        .navbar-logo img{
+            width: auto;
+        }
+
+        .spacer{
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: rgb(240, 240, 240);
+            margin: 20px 0;
+        }
+
+        .nav-link{
+            font-family: $main-font;
+            font-weight: normal;
+            font-size: 14px;
+            color: rgb(46, 46, 46);
+            text-decoration: none;
+            display: block;
+            border-radius: 10px;
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        .nav-link.active{
+            background-color: rgb(245, 245, 245);
+            color: #0087ff;
+        }
+
+        .nav-link span{
+            border-bottom: 1px solid transparent;
+        }
+
+        .nav-link:hover span{
+            border-color: #2e2e2e;
+        }
+
+        .close-btn{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+        }
+
+
+        .discord-btn{
+            position: absolute;
+            bottom: 20px;
+            width: 285px;
+        }
+    }
+}
+
+.toggle-nav{
+    .nav-backdrop{
+        visibility: visible;
+    }
+    .nav-menu{
+        transform: translateX(0);
+    }
+}
+
+.header-btn-group{
+    .btn-big{
+        max-width: 320px;
+    }
+}
+
+.header-title{
+    font-size: clamp(24px,5vw,44px);
+    margin-bottom: 25px;
+}
+
+.header-text, .desc-text{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.header-backdrop, 
+.foreground-right{
+    display: none;
+}
+
+.foreground-left{
+    display: block;
+    max-width: 880px;
+    margin-left: -80px;
+}
+
+.desc-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.download-title{
+    font-size:30px;
+    font-weight: 900;
+}
+
+.footer-info-box{
+    max-width: 350px;
+}
+
+.flag-picker{
+    max-width: 150px;
+}
+
+
+.flag-img{
+    width: 24px;
+    height: 16px;
+}
+
+
+footer .info-title{
+    color: $main-theme;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.nav-col{
+    width: 50%;
+    font-size: 14px;
+}
+
+footer {
+
+    .nav-link{
+        padding-left: 0;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    
+.header-title{
+    font-size: 56px;
+}
+
+.info-img{
+    max-width: 500px;
+}
+
+}
+
+**/
+/*# sourceMappingURL=style.css.map */
